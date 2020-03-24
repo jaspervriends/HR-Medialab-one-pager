@@ -1,22 +1,22 @@
 header {
-    background: #ededed;
-    height: 80vh;
-    width: 100vw;
-    color: #333333;
-  
-    span {
-     position:absolute;
-     margin: 2rem;
-    }
-    .con-text {
-      left: 40%;
-      top: 30%;
-  
-      position: absolute;
-      p {
-        max-width: 30rem;
-      }
-    }
+  background: #ededed;
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  color: #333333;
+  top: 0;
+
+  span.team_naam {
+    position: absolute;
+    margin: 0 auto;
+    font-size: 2rem;
+    margin: 2rem;
   }
-  
+  h1 {
+    margin-bottom: 0.2rem;
   }
+  .con-text {
+    margin-left: 20%;
+    max-width: 50rem;
+  }
+}
