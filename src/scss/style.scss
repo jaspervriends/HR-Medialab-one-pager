@@ -1,4 +1,25 @@
 body {
   background: #333333;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin: 0;
+}
+
+header {
+  background: #ededed;
+  height: 80vh;
+  width: 100vw;
+  color: #333333;
+
+  span {
+    margin: 3rem;
+  }
+  .con-text {
+    left: 40%;
+    top: 30%;
+
+    position: absolute;
+    p {
+      max-width: 30rem;
+    }
+  }
 }
