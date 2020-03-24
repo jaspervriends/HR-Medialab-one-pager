@@ -1,0 +1,32 @@
+.creative-session {
+    &__image {
+        width: 100%;
+    }
+}
+
+.subjects {
+
+    &__table {
+        margin: 0 auto;
+        border-spacing: 15px;
+        width: 100%;
+        
+        tr {
+            margin-bottom: 10px;
+
+            &:nth-child(even) {
+                background-color: #2F2F2F;
+            }
+
+            &:nth-child(odd) {
+                background-color: rgba(229, 229, 229, 0.1);
+            }
+        }
+
+        &-data {
+            font-size: 34px;
+            color: #ffffff;
+            padding: 10px;
+        }
+    }
+}

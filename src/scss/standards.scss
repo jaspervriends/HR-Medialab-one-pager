@@ -1,22 +1,48 @@
+//variables
+$font-family: 'Roboto', sans-serif;
+$primary-color: #434343;
+$secundary-color: #47FFA7;
+$white: #ffffff;
+
 h1 {
     font-size: 180px;
-    color: #434343;
+    color: $primary-color;
+    margin-bottom: 0;
 }
 
 h2 {
     font-size: 30px;
-    color: #ffffff;
+    color: $white;
 }
 
 h3 {
     font-size: 30px;
-    color: #47FFA7;
+    color: $secundary-color;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 40px;
+        height: 4px;
+        color: $secundary-color;
+        left: 0;
+        top: 50%;
+    }
 }
 
 .title__dot {
-    color: #47FFA7;
+    color: $secundary-color;
 }
 
 p { 
     font-size: 24px
 }
+
+.content-wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
