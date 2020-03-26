@@ -1,7 +1,6 @@
 header {
   background: #ededed;
-  position: absolute;
-  height: 80vh;
+  height: 600px;
   width: 100vw;
   color: #333333;
   top: 0;
@@ -12,11 +11,22 @@ header {
     font-size: 2rem;
     margin: 2rem;
   }
+
   h1 {
-    margin-bottom: 0.2rem;
+    margin-top: 0;
+    padding-top: 80px;
   }
-  .con-text {
-    margin-left: 20%;
-    max-width: 50rem;
+
+  h3 {
+    padding-left: 0;
+  }
+
+  .header__content {
+    margin: 0 auto;
+    max-width: 880px;
+
+    &-text {
+      width: 80%;
+    }
   }
 }
