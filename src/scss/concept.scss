@@ -1,4 +1,18 @@
 .concepten {
+  width: 733px;
+  height: 689px;
+  left: 384px;
+  top: 7972px;
+  padding-bottom: 150px;
+  
+  /* dark/body */
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
   &__title {
     width: 310px;
     height: 43px;
@@ -6,7 +20,6 @@
     top: 7850px;
     
     /* dark/h4 */
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -17,6 +30,24 @@
   }
 }
 
-.conceptContainer{
-  display:flex;
+.img {
+  
+  left: 16.67%;
+  right: 12.5%;
+  top: 0%;
+  bottom: 0%;
+  padding-top: 200px;
+  padding-right: 97px;
+  // background: #E5E5E5;
 }
+
+.storyboard {
+  padding-bottom: 150px;
+  width: 1200px;
+height: 1490.09px;
+left: -178.69px;
+top: 11156.98px;
+}
+
+
+
