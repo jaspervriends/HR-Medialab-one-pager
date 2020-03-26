@@ -1,9 +1,22 @@
 .concepten {
-  display: flex;
-
-  .image {
-    width: 4rem;
-    height: 4rem;
-    background: red;
+  &__title {
+    width: 310px;
+    height: 43px;
+    left: 384px;
+    top: 7850px;
+    
+    /* dark/h4 */
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    
+    color: #E5E5E5;
   }
+}
+
+.conceptContainer{
+  display:flex;
 }
