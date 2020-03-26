@@ -1,0 +1,30 @@
+.project-team-columns {
+  padding: 40px 0;
+
+  @media screen and (min-width: 769px) {
+    display: flex;
+  }
+
+  >div {
+    padding: 5px;
+
+    @media screen and (min-width: 769px) {
+      width: calc(100% / 4);
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &.double {
+      @media screen and (min-width: 769px) {
+        width: calc(100% / 2);
+      }
+    }
+
+    &.team-title {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

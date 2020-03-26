@@ -5,9 +5,17 @@ $secundary-color: #47FFA7;
 $white: #ffffff;
 
 h1 {
-    font-size: 180px;
+    font-size: 70px;
     color: $primary-color;
     margin-bottom: 0;
+
+    @media screen and (min-width: 700px) and (max-width: 1199px) {
+        font-size: 100px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 180px;
+    }
 }
 
 h2 {
@@ -44,5 +52,6 @@ p {
 .content-wrapper {
     max-width: 1180px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
