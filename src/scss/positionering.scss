@@ -1,91 +1,31 @@
-
-
-.box-grey {
-    width: 387px;
-    height: 303px;  
-    padding: 50px;
-    background-color:  #434343;
-    // border: 1px solid red;
-
-    &__title {
-        padding-bottom: 25px;
-        width: 136px;
-        height: 40px;
-        left: 40px;
-        top: 2089px;
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 35px;
-
-        color: #C4C4C4;
+.positionering {
+    &__boxes {
+        display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
     }
 
-    &__content {
-        width: 305px;
-        height: 153px;
-        left: 40px;
-        top: 2154px;
+    &__box {
+        background-color:  #2F2F2F;
+        padding: 30px;
+        flex-basis: 100%;
+        height: 250px;  
 
-        // padding-top: 87px;
-        padding-bottom: 63px;
-        padding-right: 42px; 
+        @media screen and (min-width: 769px) {
+            flex-basis: percentage(1/3);
+        }
 
-        /* light/body */
+        &--gray {
+            background-color: #434343; 
+        }
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
+        &__title {
+            font-size: 30px;
+        }
 
-        color: #EDEDED;
+        &__content {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
-}
-
-.box {
-    width: 387px;
-    height: 303px;  
-    padding: 50px;
-    left: 0px;
-    background-color:  #2F2F2F;
-    top: 2067px;
-    // border: 1px solid red;
-
-    &__title {
-        padding-bottom: 25px;
-        width: 136px;
-        height: 40px;
-        left: 40px;
-        top: 2089px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 35px;
-
-        color: #C4C4C4;
-    }
-
-    &__content {
-        width: 305px;
-        height: 153px;
-        left: 40px;
-        top: 2154px;
-
-        /* light/body */
-
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
-
-        color: #EDEDED;
-    }
-}
-.container {
-    display: flex;
 }
