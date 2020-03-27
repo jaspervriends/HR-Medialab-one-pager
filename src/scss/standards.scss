@@ -14,7 +14,7 @@ h1 {
     }
 
     @media screen and (min-width: 1200px) {
-        font-size: 180px;
+        font-size: 170px;
     }
 }
 
@@ -27,15 +27,15 @@ h3 {
     font-size: 30px;
     color: $secundary-color;
     position: relative;
-    padding-left: 40px;
+    padding-left: 100px;
 
-    &::before {
+    &::after {
         position: absolute;
         display: block;
         content: '';
-        width: 40px;
-        height: 4px;
-        color: $secundary-color;
+        height: 1px;
+        width: 75px;
+        background: #47FFA7;
         left: 0;
         top: 50%;
     }

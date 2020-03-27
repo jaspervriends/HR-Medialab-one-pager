@@ -14,19 +14,20 @@
         tr {
             margin-bottom: 10px;
 
-            &:nth-child(even) {
+            &:nth-child(odd) {
                 background-color: #2F2F2F;
             }
 
-            &:nth-child(odd) {
+            &:nth-child(even) {
                 background-color: rgba(229, 229, 229, 0.1);
             }
         }
 
         &-data {
-            font-size: 34px;
+            font-size: 40px;
             color: #ffffff;
-            padding: 10px;
+            padding: 25px;
+            font-weight: 500;
         }
     }
 }

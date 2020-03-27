@@ -1,8 +1,10 @@
 header {
   background: #ededed;
-  height: 600px;
+  min-height: 600px;
   color: #333333;
   top: 0;
+  overflow: hidden;
+  padding: 0 30px;
 
   span.team_naam {
     position: absolute;
@@ -16,16 +18,71 @@ header {
     padding-top: 80px;
   }
 
-  h3 {
-    padding-left: 0;
+  h2 {
+    color: black;
+    font-size: 40px;
   }
 
   .header__content {
     margin: 0 auto;
     max-width: 880px;
+    position: relative;
+    padding-bottom: 110px;
 
-    &-text {
-      width: 80%;
+    .plus {
+      right: -10px;
+      top: 300px;
+
+      @media screen and (min-width: 1000px) {
+        right: -100px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        top: 400px;
+      }
+
+      @media screen and (max-width: 769px) {
+        top: calc(100% - 110px);
+        left: calc(50% - 50px);
+      }
     }
+
+    @media screen and (min-width: 769px) {
+      &-text {
+        width: 80%;
+      }
+    }
+  }
+
+  .plus {
+    position: absolute;
+    right: 40px;
+    top: 400px;
+    transform: rotate(10deg);
+    transform-origin: 50% 50%;
+    width: 100px;
+    height: 100px;
+
+    &:before {
+      content: "";
+      width: 100px;
+      height: 20px;
+      display: block;
+      background: #47FFA7;
+      position: absolute;
+      position: absolute;
+      top: 40px;
+    }
+
+    &:after {
+      content: "";
+      height: 100px;
+      width: 20px;
+      display: block;
+      background: #47FFA7;
+      position: absolute;
+      left: 40px;
+    }
+
   }
 }

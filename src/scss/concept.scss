@@ -4,6 +4,7 @@
 
   &__image {
       flex-basis: 100%;
+      padding-top: 150px;
 
       @media screen and (min-width: 769px) {
           flex-basis: 50%;
