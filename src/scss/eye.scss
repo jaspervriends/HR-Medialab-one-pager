@@ -1,0 +1,18 @@
+.homepage-eye {
+    background-color: #47FFA7;
+    padding: 50px 0;
+    text-align: center;
+
+    &__link {
+        text-decoration: underline;
+        font-size: 30px;
+        margin: 0 auto;
+        color: white;
+    }
+}
+
+.eye {
+    &__logo {
+        width: 50px;
+    }
+}
