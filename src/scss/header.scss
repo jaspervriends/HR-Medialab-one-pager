@@ -55,34 +55,8 @@ header {
   }
 
   .plus {
-    position: absolute;
     right: 40px;
     top: 400px;
-    transform: rotate(10deg);
-    transform-origin: 50% 50%;
-    width: 100px;
-    height: 100px;
-
-    &:before {
-      content: "";
-      width: 100px;
-      height: 20px;
-      display: block;
-      background: #47FFA7;
-      position: absolute;
-      position: absolute;
-      top: 40px;
-    }
-
-    &:after {
-      content: "";
-      height: 100px;
-      width: 20px;
-      display: block;
-      background: #47FFA7;
-      position: absolute;
-      left: 40px;
-    }
-
   }
+
 }

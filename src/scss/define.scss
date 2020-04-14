@@ -1,0 +1,35 @@
+.define {
+    width: 100%;
+    padding-top: 200px;
+    position: relative;
+    
+    .plus {
+        top: 200px;
+        right: 100px;
+
+        &::before {
+            background: rgba(#47FFA7, 0.4);
+            width: 200px;
+            height: 30px;
+            top: 84px;
+        }
+
+        &::after {
+            background: rgba(#47FFA7, 0.4);
+            height: 200px;
+            width: 30px;
+            left: 86px;
+        }
+    }
+}
+
+.customer-journey {
+    &__image {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &--smaller {
+            width: auto;
+        }
+    }
+}

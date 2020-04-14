@@ -9,3 +9,5 @@ import "./scss/team.scss";
 import "./scss/questions.scss";
 import "./scss/positionering.scss";
 import "./scss/empathize.scss";
+import "./scss/define.scss";
+import "./scss/prototyping.scss";
