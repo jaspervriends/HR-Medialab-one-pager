@@ -11,8 +11,53 @@
     }
 }
 
+body {
+    margin: 0px;
+}
+
 .eye {
+    &-wrapper {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+
+        &__bluetooth {
+            position: absolute;
+            bottom: 40px;
+            left: 47%;
+        }
+    }
+
     &__logo {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        width: 100px;
+
+        &-text {
+            position: absolute;
+            top: 115px;
+            right: 10px;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    &__image-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.music-button {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    cursor: pointer;
+
+    &__image {
         width: 50px;
     }
 }
