@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: {main: './src/app.js', eyes: './src/js/eyes.js'},
   module: {
     rules: [
       {
@@ -18,7 +18,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|mp3)$/i,
         loader: 'file-loader',
         options: {
           name: 'assets/[name].[ext]',
@@ -39,7 +39,15 @@ module.exports = {
       ignoreOrder: false, // Enable to remove warnings about conflicting order
     }),
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      js: ["assets/app.js"],
+      template: './src/index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      js: ["assets/eyes.js"],
+      template: './src/eye.html',
+      filename: 'eye.html',
+      chunks: ['eyes']
     }),
   ],
   output: {
