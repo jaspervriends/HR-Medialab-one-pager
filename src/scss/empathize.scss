@@ -1,0 +1,35 @@
+.empathize {
+    padding-top: 120px;
+
+    .half-circle {
+        border: 30px solid #5c5c5c;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        float: left;
+        position: absolute;
+        left: -150px;
+        z-index: -1;
+        margin-top: 150px;
+    }
+
+    .circle-green-text {
+        border: 5px solid #47ffa7;
+        width: 180px;
+        height: 180px;
+        border-radius: 100%;
+        line-height: 180px;
+        text-align: center;
+        float: right;
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #47ffa7;
+        margin-right: 30px;
+    }
+
+    .clear {
+        clear: both;
+        margin-bottom: 80px;
+    }
+}
