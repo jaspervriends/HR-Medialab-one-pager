@@ -1,0 +1,61 @@
+.retrospective-wrapper {
+
+}
+
+.retrospective {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+    &__block {
+        flex-basis: 100%;
+        height: 350px;
+        margin-bottom: 20px;
+        padding: 20px;
+
+        @media screen and (min-width: 750px) {
+            flex-basis: calc(50% - 50px);
+            margin-right: 20px;  
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            $width: percentage(1 / 3);
+            flex-basis: calc(#{$width} - 53.33333px);
+
+            &:nth-child(2n) {
+                margin-right: 20px;
+            }
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        &--red {
+            background-color: #E56565;
+        }
+
+        &--green {
+            background-color: #47FFA7;
+        }
+
+        &--white {
+            background-color: #E5E5E5;
+        }
+
+        &--gray {
+            background-color: #434343;
+
+            .span {
+                color: #47FFA7;
+                font-size: 50px;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}
