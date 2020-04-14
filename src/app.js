@@ -8,3 +8,4 @@ import "./scss/concept.scss";
 import "./scss/team.scss";
 import "./scss/questions.scss";
 import "./scss/positionering.scss";
+import "./scss/empathize.scss";
