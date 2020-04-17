@@ -4,6 +4,10 @@ $primary-color: #434343;
 $secundary-color: #47FFA7;
 $white: #ffffff;
 
+body {
+    position: relative;
+}
+
 h1 {
     font-size: 70px;
     color: $primary-color;
@@ -111,5 +115,17 @@ p {
         font-size: 23px;
         text-transform: uppercase;
     }
+}
+
+.top-button {
+    z-index: 1;
+    background-color: #3cc784;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 48%;
+    border-radius: 25px;
+    text-decoration: none;
 }
 

@@ -6,7 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body id="body">
+        <nav class="navigation">
+            <input type="checkbox" id="nav-toggle" >
+            <label for="nav-toggle" class="burger">
+                <div class="burger__bar burger__bar--top"></div>
+                <div class="burger__bar burger__bar--center"></div>
+                <div class="burger__bar burger__bar--bottom"></div>
+            </label>
+            <label for="pop-up-item" class="overlay"></label>
+            <div class="nav-wrapper">
+                <ul class="linkjes">
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#positionering">Positionering</a></li>
+                    <li><a href="#creative-session">Creatieve Sessie</a></li>
+                    <li><a href="#empathize">Empathize</a></li>
+                    <li><a href="#concepten">Concepten</a></li>
+                    <li><a href="#define">Define</a></li>
+                    <li><a href="#requirements">Requirements</a></li>
+                    <li><a href="#concept">Uitwerking Concept</a></li>
+                    <li><a href="#retrospective">Retrospective</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="top-button" href="#body">Top</a>
     <header>
         <span class="team_naam">Team-2</span>
         <div class="header__content">
@@ -27,7 +50,7 @@
         </div>
     </div>
     <div class="content-wrapper">
-        <div class="project-team">
+        <div class="project-team" id="team">
             <h1>Het team<span class="title__dot">.</span></h1>
 
             <div class="project-team-columns">
@@ -44,7 +67,7 @@
             </div>
         </div>
 
-        <div class="positionering">
+        <div class="positionering" id="positionering">
             <h1 class="positionering__title">Positionering<span class="title__dot">.</span></h1>
             <h3 class="creative-session__subtitle">Rollen</h3>
             <div class="positionering__boxes">
@@ -88,7 +111,7 @@
             </div>
         </div>
 
-        <div class="creative-session">
+        <div class="creative-session" id="creative-session">
             <h1 class="creative-session__title">Creatieve sessie<span class="title__dot">.</span></h1>
             <h3 class="creative-session__subtitle">Mindmap</h3>
             <img class="creative-session__image" src="./assets/mindmap.jpeg"/>
@@ -141,7 +164,7 @@
             </div>
         </div>
 
-        <div class="empathize">
+        <div class="empathize" id="empathize">
             <div class="half-circle"></div>
             <div class="circle-green-text">Empathize</div>
             <div class="clear"></div>
@@ -152,7 +175,7 @@
             <img class="storyboard" src="./assets/persona.png" style="margin: 100px auto; display: block;"/>
         </div>
 
-        <div>
+        <div id="concepten">
             <h1 class="creative-session__title">Concepten<span class="title__dot">.</span></h1>
             
             <!-- Concept 1 -->
@@ -246,7 +269,7 @@
             <img class="storyboard" src="./assets/Storyboard3.png"/>
         </div>
 
-        <div class="define">
+        <div class="define" id="define">
             <div class="circle-full">
                 <span class="circle-full__title">Define</span>
             </div>
@@ -259,13 +282,47 @@
             </div>
         </div>
 
-        <div class="prototyping">
+        <div class="requirements" id="requirements">
+            <h1>Requirements<span class="title__dot">.</span></h1>
+            <h3>Conceptueel</h3>
+            <div class="requirements__box-wrapper">
+                <div class="requirements__box positionering__box--gray">
+                    <p>Doelgroep moet op social media zitten.</p>
+                </div>
+                <div class="requirements__box positionering__box--gray">
+                    <p>Het doel van de installatie is bewust zijn van social cooling.</p>
+                </div>
+                <div class="requirements__box positionering__box--gray">
+                    <p>Gebruikers moeten in het bezit zijn van een telefoon.</p>
+                </div>
+                <div class="requirements__box positionering__box--gray">
+                    <p>Doelgroep is tussen twintig en dertig jaar.</p>
+                </div>
+                <div class="requirements__box positionering__box--gray">
+                    <p>De gebruiker moet Bluetooth aan hebben staan.</p>
+                </div>
+            </div>
+            <h3>Functioneel</h3>
+            <div class="requirements__box-wrapper">
+                <div class="requirements__box positionering__box--gray">
+                    <p>Gebruiksvriendelijk</p>
+                </div>
+                <div class="requirements__box positionering__box--gray">
+                    <p>Gebruiker moet aan het einde een geschokte reactie krijgen van de installatie.</p>
+                </div>
+                <div class="requirements__box positionering__box--gray">
+                    <p>Privacy onvriendelijk!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="prototyping" id="concept">
+            <h1>Uitwerking Concept<span class="title__dot">.</span></h1>
+            <h3 class="prototyping__concept-title">Eye will follow you</h3>
+
             <div class="circle-full">
                 <span class="circle-full__title">Prototyping</span>
             </div>
-
-            <h1>Uitwerking Concept<span class="title__dot">.</span></h1>
-            <h3 class="prototyping__concept-title">Eye will follow you</h3>
             <div class="prototyping__explanation-wrapper">
                 <div class="prototyping__explanation">
                     <h2>Concept Web</h2>
@@ -277,15 +334,36 @@
                 </div>
             </div>
 
-            <h3>Prototype Web</h3>
+            <h3>Prototype Web</h3> 
             <img class="prototyping__image" src="./assets/prototype_web.png"/>
 
             <h3>Prototype Installatie</h3>
             <iframe width="100%" height="600" src="https://www.youtube.com/embed/XLUoOFKI8Qs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             
+            <div class="prototyping-development">
+                <h3>Development</h3>
+                <div class="prototyping-development__wrapper">
+                    <div class="prototyping-development__column-wrapper">
+                        <div class="prototyping-development__column prototyping-development__column--gray">HTML</div>
+                        <div class="prototyping-development__column prototyping-development__column--lightgray">SASS</div>
+                        <div class="prototyping-development__column prototyping-development__column--gray">JS</div>
+                        <div class="prototyping-development__column prototyping-development__column--lightgray">WEBPACK</div>
+                        <div class="prototyping-development__column prototyping-development__column--gray">THREEJS</div>
+                        <div class="prototyping-development__column prototyping-development__column--lightgray">WEBGL</div>
+                    </div>
+                    <div class="prototyping-development__column-wrapper">
+                        <div class="prototyping-development__column prototyping-development__column--gray">MIRO</div>
+                        <div class="prototyping-development__column prototyping-development__column--lightgray">TRELLO</div>
+                        <div class="prototyping-development__column prototyping-development__column--gray">FIGMA</div>
+                    </div>
+                </div>
+            </div>
+        
         </div>
 
-        <div class="retrospective-wrapper">
+
+
+        <div class="retrospective-wrapper" id="retrospective">
             <h1>Retrospective<span class="title__dot">.</span></h1>
             <div class="retrospective">
                 <div class="retrospective__block retrospective__block--gray">
