@@ -1,0 +1,23 @@
+.requirements {
+    &__box-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+
+        @media screen and (min-width: 900px) {
+            margin-left: 20%;
+        }
+    }
+
+    &__box {
+        flex-basis: calc(50% - 40px);
+        margin-right: 15px;
+        margin-top: 20px;
+        padding: 10px;
+        height: 200px;
+
+        @media screen and (min-width: 900px) {
+            flex-basis: calc(25% - 40px);
+        }
+    }
+}

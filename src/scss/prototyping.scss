@@ -1,5 +1,5 @@
 .prototyping {
-    padding-top: 100px;
+
     &__concept-title {
         font-size: 50px;
         padding-left: 5px;
@@ -22,7 +22,6 @@
         @media screen and (min-width: 800px) {
             display: flex;
         }
-    
     }
 
     &__explanation {
@@ -37,6 +36,52 @@
     .circle-full {
         &__title {
             left: 11%;
+        }
+    }
+
+    &-development{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__column-wrapper {
+            flex-basis: calc(50% - 40px);
+
+            &:nth-child(1) {
+                margin-right: 40px;
+            }
+
+            @media screen and (max-width: 750px) {
+                flex-basis: calc(50% - 20px);
+
+                &:nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
+        
+            
+        }
+
+        &__column{
+            padding: 15px;
+            color: white;
+            font-size: 26px;
+            margin-bottom: 10px;
+            
+            
+            &--gray {
+                background-color:  #2F2F2F;
+            }
+
+            &--lightgray {
+                background-color:  rgba(229, 229, 229, 0.1);
+            }
         }
     }
 }
