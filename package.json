@@ -29,6 +29,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "style-loader": "^1.1.3"
+    "style-loader": "^1.1.3",
+    "three": "^0.115.0"
   }
 }

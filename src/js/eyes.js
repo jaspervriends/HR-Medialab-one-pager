@@ -1,5 +1,6 @@
 import "../scss/eye.scss";
 import { inherits } from "util";
+import './eyes/main.js';
 
 
 let wrapper = document.body.querySelector('.eye-wrapper');
