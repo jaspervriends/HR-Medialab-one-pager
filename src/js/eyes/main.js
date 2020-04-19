@@ -3,7 +3,7 @@ var THREE = require('three');
 
 //Creating a scene
 var scene = new THREE.Scene();
-scene.background = new THREE.Color( 0xcc0ff);
+// scene.background = new THREE.Color( 0xcc0ff);
 scene.fog = new THREE.Fog(0xfc0398, 0.2, 100);
 var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );            //Er zijn verschillende soorten camera's.
 /*
@@ -14,7 +14,8 @@ Near & far:   Objecten die verder staan van de camera dan de waarde "far" en obj
               bij de camera staan dan de waarde "near" zullen niet gerenderd worden. 
 */
 
-var renderer = new THREE.WebGLRenderer({antialias: true});                                                 //Er zijn browsors die dit niet supporten. Antialias zorgt ervoor dat de globe shaper eruit ziet.
+var renderer = new THREE.WebGLRenderer({antialias: true, alpha: true});                                                 //Er zijn browsors die dit niet supporten. Antialias zorgt ervoor dat de globe shaper eruit ziet.
+renderer.setClearColor( 0x000000, 0 ); // the default
 renderer.setSize( window.innerWidth, window.innerHeight );                                                 //Grootte van renderen.
 document.body.appendChild( renderer.domElement );                                                          //Canvas Eelement the renderer uses to display the scene to us.
 

@@ -6,6 +6,12 @@ html {
     cursor: url('../assets/bluetooth_icon.png'), auto;
 }
 
+body {
+    margin: 0px;
+    background: url('../assets/ugly_bg.png');
+    background-size: cover;
+}
+
 canvas { 
     width: 100%;
     height: 100%;
@@ -16,6 +22,16 @@ canvas {
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+
+.menu {
+    background: url('../assets/supercoolmenu.png') no-repeat;
+    width: 1169px;
+    height: 80px;
+    position: fixed;
+    left: 50%;
+    margin-left: -584.5px;
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.12);
 }
 
 .homepage-eye {
@@ -29,10 +45,6 @@ canvas {
         margin: 0 auto;
         color: white;
     }
-}
-
-body {
-    margin: 0px;
 }
 
 .back-button {
