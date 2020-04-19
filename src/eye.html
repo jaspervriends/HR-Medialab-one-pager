@@ -7,22 +7,60 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900&display=swap" rel="stylesheet">
   </head>
   <body>
-      <audio id="audio">
-          <source src="./assets/Nieuwe-opname-54.mp3" type="audio/mpeg">
+
+      <audio id="audio__leave">
+          <source src="./assets/weggaan.mp3" type="audio/mpeg">
       </audio>
+      <audio id="audio__stayaway">
+          <source src="./assets/afblijven.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="audio__comeback">
+          <source src="./assets/terugkomen.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="audio__stay">
+          <source src="./assets/blijven.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="audio__begin">
+          <source src="./assets/begin.mp3" type="audio/mpeg">
+      </audio>
+
       <audio id="audio-bg1">
         <source src="./assets/I_ll_Follow_You.mp3" type="audio/mpeg">
-    </audio>
+      </audio>
+      <audio id="audio-bg2">
+          <source src="./assets/Crazy_Eyes.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="audio-bg3">
+          <source src="./assets/Eyes_On_You.mp3" type="audio/mpeg">
+      </audio>
 
       <div class="eye-wrapper">
-			<img class="eye__logo" src="./assets/Logo.png"/>
-			<span class="eye__logo-text">Bevrijdingsdag 2020</span>
-            <div class="music-button">
-              <img class="music-button__image" src="./assets/icon_volume.png"/>
+        <a class="back-button" href="index.html">Terug</a>
+        <img class="eye__logo" src="./assets/fakker.png"/>
+        
+        <span class="eye__logo-text">Bevrijdingsdag 2020</span>
+          <div class="music-button">
+			<p class="music-button__text"></p>
+            <div class="music-button--song music-button--song1">
+                <img class="music-button__image music-button__image1" src="./assets/icon_volume.png"/>
             </div>
-            <img class="eye-wrapper__bluetooth" src="./assets/bluetooth.png"/>
-      </div>
-      
+            <div class="music-button--song music-button--song2">
+                <img class="music-button__image music-button__image2" src="./assets/icon_volume.png"/>
+            </div>
+            <div class="music-button--song music-button--song3">
+                <img class="music-button__image music-button__image3" src="./assets/icon_volume.png"/>
+            </div>
+          </div>
+        <img class="eye-wrapper__bluetooth" src="./assets/bluetooth.png"/>
+	  </div>
+	  <div class="concept__overlay modal">
+		  <div class="concept__explanation">
+			<img class="concept__logo" src="./assets/logo.png"/>
+			<h2 class="concept__title">Eye follow you</h2>
+			<p class="concept__text">Wij willen aan de bezoekers van het bevrijdings festival doormiddel van Bluetooth laten zien hoe makkelijk het is om gevolgd te worden. Door middel van dit concept willen we visualiseren hoe je gevolgd wordt op het internet. In de huidige situatie wordt je overal gevolgd op het internet.</p>
+			<button class="concept__button">Sluiten</button>
+		</div>
+	  </div>
   </body>
 </html>
   
