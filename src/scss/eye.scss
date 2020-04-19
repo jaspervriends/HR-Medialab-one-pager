@@ -1,3 +1,7 @@
+$font-family: 'Roboto', sans-serif;
+$blue: #203788;
+$red: #FB0801;
+
 html {
     cursor: url('../assets/bluetooth_icon.png'), auto;
 }
@@ -31,6 +35,38 @@ body {
     margin: 0px;
 }
 
+.back-button {
+    z-index: 1;
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    top: 20px;
+    left: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    position: absolute;
+
+}
+
+.start-button {
+    z-index: 1;
+    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: block;
+    left: 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
 .eye {
     &-wrapper {
         width: 100vw;
@@ -52,7 +88,7 @@ body {
 
         &-text {
             position: absolute;
-            top: 115px;
+            top: 190px;
             right: 10px;
             color: black;
             font-size: 20px;
@@ -68,12 +104,76 @@ body {
 }
 
 .music-button {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 40px;
     left: 40px;
     cursor: pointer;
+    width: 200px;
 
     &__image {
         width: 50px;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-size: 30px;
+        color: black;
+        font-family: $font-family;
+    }
+}
+
+.concept {
+    &__overlay {
+        position: absolute;
+        background-color: rgba($blue, 0.8);
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding: 60px 0;
+    }
+
+    &__explanation {
+        position: absolute;
+        background-color: white;
+        width: 500px;
+        height: 300px;
+        font-family: $font-family;
+        z-index: 1;
+        padding: 50px;
+        color: $blue;
+        right: calc(50% - 300px);
+        top: calc(50% - 300px);
+    }
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 30px;
+        text-transform: uppercase
+    }
+
+    &__button {
+        padding: 10px 30px;
+        font-size: 14px;
+        color: white;
+        background-color: $blue;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: #15255c;
+        }
     }
 }
