@@ -32,6 +32,8 @@ canvas {
     left: 50%;
     margin-left: -584.5px;
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    z-index: 1;
 }
 
 .homepage-eye {
