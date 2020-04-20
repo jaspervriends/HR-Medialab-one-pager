@@ -133,8 +133,9 @@ canvas {
 
     &__text {
         font-size: 30px;
-        color: black;
+        color: $blue;
         font-family: $font-family;
+        width: 400px
     }
 }
 
