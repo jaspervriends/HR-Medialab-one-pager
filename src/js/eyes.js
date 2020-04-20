@@ -73,13 +73,10 @@ let closeButton = document.body.querySelector('.concept__button')
 closeButton.addEventListener('click', () => {
     begin.play()
     modal.style.display = "none"
-})
-
-window.onload = function() {
     audio1.play();
     audio1.volume = 0.2;
 
     p.innerHTML = 'Now playing: I follow you'
-}
+})
 
 window.addEventListener("load", init)
