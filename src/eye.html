@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900&display=swap" rel="stylesheet">
   </head>
   <body>
-
+      <div class="menu" onclick="window.open('eye.html');"></div>
       <audio id="audio__leave">
           <source src="./assets/weggaan.mp3" type="audio/mpeg">
       </audio>
@@ -35,12 +35,12 @@
       </audio>
 
       <div class="eye-wrapper">
-        <a class="back-button" href="index.html">Terug</a>
+        <a class="back-button" href="#" ondblclick="event.preventDefault();document.location.href = 'index.html'" onclick="event.preventDefault();" title="Als het niet 1 klik is, wat dan wel?">Terug</a>
         <img class="eye__logo" src="./assets/fakker.png"/>
         
         <span class="eye__logo-text">Bevrijdingsdag 2020</span>
           <div class="music-button">
-			<p class="music-button__text"></p>
+			      <p class="music-button__text"></p>
             <div class="music-button--song music-button--song1">
                 <img class="music-button__image music-button__image1" src="./assets/icon_volume.png"/>
             </div>

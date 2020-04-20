@@ -1,4 +1,5 @@
 import "../scss/eye.scss";
+import './eyes/main.js';
 
 let wrapper = document.body.querySelector('.eye-wrapper');
 let musicWrapper = document.body.querySelector('.music-button');
