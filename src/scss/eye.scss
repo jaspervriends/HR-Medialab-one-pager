@@ -1,6 +1,7 @@
 $font-family: 'Roboto', sans-serif;
 $blue: #203788;
 $red: #FB0801;
+$gray: #434343;
 
 html {
     cursor: url('../assets/bluetooth_icon.png'), auto;
@@ -41,11 +42,30 @@ canvas {
     padding: 50px 0;
     text-align: center;
 
+    &__span {
+        display: block;
+        margin: 20px 0;
+        font-size: 18px;
+        color: $gray;
+        font-family: $font-family;
+    }
+
     &__link {
-        text-decoration: underline;
-        font-size: 30px;
+        display: inline-block;
+        border-radius: 25px;
+        font-size: 20px;
+        text-decoration: none;
         margin: 0 auto;
         color: white;
+        background-color: $gray;
+        padding: 13px 30px;;
+    }
+
+    &__concept-image {
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 5px;
     }
 }
 
