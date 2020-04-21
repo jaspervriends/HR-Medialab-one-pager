@@ -29,6 +29,10 @@ header {
     position: relative;
     padding-bottom: 110px;
 
+    &-title {
+      margin-bottom: 50px;
+    }
+
     .plus {
       right: -10px;
       top: 300px;
