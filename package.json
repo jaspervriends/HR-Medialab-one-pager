@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "style-loader": "^1.1.3",
-    "three": "^0.115.0"
+    "three": "^0.137.0"
   }
 }
